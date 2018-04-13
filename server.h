@@ -9,7 +9,7 @@
 #define SERVER_H
 
 // Processes a packet based unon the guidelines set forth
-// in the Starry homework problem
+// in the assignment
 class PacketProcessor {
 public:
 PacketProcessor(char* buffer, int bufferSize);
