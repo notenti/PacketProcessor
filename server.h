@@ -47,8 +47,13 @@ uint16_t _incomingPayloadLength, _outgoingPayloadLength, _outgoingResponseCode, 
 uint32_t _totalBytesSent, _totalBytesReceived, _preCompressedBytes, _postCompressedBytes, _incomingMagicNumber, _outgoingMagicNumber = 0X53545259;
 uint64_t _incomingPacketHeader, _outgoingPacketHeader;
 
+// 16384 = 16 MB
 char _incomingBuffer[16384];
+
+// 16376 = 16 MB - 8 bits
 char _outputBufferPayload[16376];
+
+
 char _outputBufferFull[16384];
 
 std::string _incomingPayload, _outgoingPayloadString;
